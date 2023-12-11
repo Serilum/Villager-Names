@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.natamus.villagernames.forge.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "villagernames_forge.refmap.json",
+  "mixins": [
+  ],
+  "client": [
+    "MerchantScreenMixin"
+  ],
+  "server": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
