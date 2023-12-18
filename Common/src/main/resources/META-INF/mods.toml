@@ -1,14 +1,14 @@
 modLoader="javafml"
 loaderVersion="*"
 license="All rights reserved"
-issueTrackerURL="https://github.com/ricksouth/serilum-mc-mods/labels/Mod:%20Villager%20Names"
+issueTrackerURL="https://github.com/Serilum/.issue-tracker/labels/Mod:%20Villager%20Names"
 logoFile="icon.png"
 
 [[mods]]
 modId="villagernames"
-version="7.1"
+version="7.2"
 displayName="Villager Names"
-displayURL="https://curseforge.com/minecraft/mc-mods/villager-names"
+displayURL="https://serilum.com/mod/villager-names"
 authors="Rick South"
 description='''Gives all villagers and villager-like entities their own name.
 '''
@@ -21,13 +21,15 @@ If you would like to contribute too, check out https://ricksouth.com/donate. App
 
 [[dependencies.villagernames]]
     modId="collective"
+    type="required"
     mandatory=true
-    versionRange="[7.8,)"
+    versionRange="[7.21,)"
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.villagernames]]
     modId="minecraft"
+    type="required"
     mandatory=true
     versionRange="[1.20.2]"
     ordering="NONE"
