@@ -1,4 +1,4 @@
-package com.natamus.villagernames.forge.mixin;
+package com.natamus.villagernames.mixin;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.natamus.collective.functions.ScreenFunctions;
