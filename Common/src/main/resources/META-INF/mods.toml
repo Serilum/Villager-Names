@@ -6,7 +6,7 @@ logoFile="icon.png"
 
 [[mods]]
 modId="villagernames"
-version="7.2"
+version="7.3"
 displayName="Villager Names"
 displayURL="https://serilum.com/mod/villager-names"
 authors="Rick South"
@@ -23,7 +23,7 @@ If you would like to contribute too, check out https://ricksouth.com/donate. App
     modId="collective"
     type="required"
     mandatory=true
-    versionRange="[7.21,)"
+    versionRange="[7.26,)"
     ordering="NONE"
     side="BOTH"
 
@@ -36,4 +36,4 @@ If you would like to contribute too, check out https://ricksouth.com/donate. App
     side="BOTH"
 
 [[mixins]]
-    config = "villagernames_neoforge.mixins.json"
+    config = "villagernames.mixins.json"
