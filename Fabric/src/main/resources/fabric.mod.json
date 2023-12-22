@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "villagernames",
-  "version": "7.2",
+  "version": "7.3",
 
   "name": "Villager Names",
   "description": "Gives all villagers and villager-like entities their own name.",
@@ -18,7 +18,7 @@
   "environment": "*",
   "entrypoints": { "main": [ "com.natamus.villagernames.ModFabric" ], "modmenu": [ "com.natamus.villagernames.fabric.config.IntegrateModMenu" ] },
   "mixins": [
-    "villagernames_fabric.mixins.json"
+    "villagernames.mixins.json"
   ],
 
   "depends": {
@@ -26,7 +26,7 @@
     "fabric": "*",
     "minecraft": ">=1.20",
     "java": ">=17",
-    "collective": ">=7.21"
+    "collective": ">=7.26"
   },
 
   "custom": {

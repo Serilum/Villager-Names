@@ -1,4 +1,4 @@
-package com.natamus.villagernames.fabric.mixin;
+package com.natamus.villagernames.mixin;
 
 import com.natamus.collective.functions.ScreenFunctions;
 import com.natamus.villagernames.config.ConfigHandler;
