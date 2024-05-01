@@ -1,0 +1,37 @@
+modLoader="javafml"
+loaderVersion="*"
+license="All rights reserved"
+issueTrackerURL="https://github.com/Serilum/.issue-tracker/labels/Mod:%20Villager%20Names"
+logoFile="icon.png"
+
+[[mods]]
+modId="villagernames"
+version="7.3"
+displayName="Villager Names"
+displayURL="https://serilum.com/mod/villager-names"
+authors="Rick South"
+description='''Gives all villagers and villager-like entities their own name.
+'''
+credits='''Thank you very much to my Membership sponsors for supporting the development of this mod:  
+
+Alister, Andrean Olgo, aternosorg, BirdieMiner, Cherriesaurus, Jack, Jeremy Langford, Michael W. S., pepe1191, Shana Gitnick, Tyler Behl   
+
+If you would like to contribute too, check out https://serilum.com/donate. Appreciate it! <3   
+'''
+
+[[dependencies.villagernames]]
+    modId="collective"
+    type="required"
+    versionRange="[7.54,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.villagernames]]
+    modId="minecraft"
+    type="required"
+    versionRange="[1.20.6]"
+    ordering="NONE"
+    side="BOTH"
+
+[[mixins]]
+    config = "villagernames.mixins.json"
