@@ -35,7 +35,7 @@ public class Names {
 			else {
 				cn = cn.replace("\n", "").replace("\r", "").strip();
 
-				String[] cns = cn.split(",");
+				String[] cns = cn.split("[,\\n]");
 				for (String n : cns) {
 					String name = n.strip();
 
