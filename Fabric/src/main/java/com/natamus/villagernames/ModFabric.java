@@ -1,9 +1,11 @@
 package com.natamus.villagernames;
 
 import com.natamus.collective.check.RegisterMod;
+import com.natamus.villagernames.cmds.CommandVillagernames;
 import com.natamus.villagernames.events.VillagerEvent;
 import com.natamus.villagernames.util.Reference;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerEntityEvents;
 import net.fabricmc.fabric.api.event.player.UseEntityCallback;
 import net.minecraft.server.level.ServerLevel;
@@ -28,6 +30,10 @@ public class ModFabric implements ModInitializer {
 
 		UseEntityCallback.EVENT.register((player, world, hand, entity, hitResult) -> {
 			return VillagerEvent.onVillagerInteract(player, world, hand, entity, hitResult);
+		});
+
+		CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {
+			CommandVillagernames.register(dispatcher);
 		});
 	}
 
