@@ -1,6 +1,7 @@
 package com.natamus.villagernames;
 
 import com.natamus.collective.check.RegisterMod;
+import com.natamus.collective.check.ShouldLoadCheck;
 import com.natamus.villagernames.cmds.CommandVillagernames;
 import com.natamus.villagernames.events.VillagerEvent;
 import com.natamus.villagernames.util.Reference;
@@ -15,6 +16,10 @@ public class ModFabric implements ModInitializer {
 	
 	@Override
 	public void onInitialize() {
+		if (!ShouldLoadCheck.shouldLoad(Reference.MOD_ID)) {
+			return;
+		}
+
 		setGlobalConstants();
 		ModCommon.init();
 

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "villagernames",
-  "version": "8.0",
+  "version": "8.1",
 
   "name": "Villager Names",
   "description": "Gives all villagers and villager-like entities their own name.",
@@ -26,7 +26,7 @@
     "fabric": "*",
     "minecraft": ">=1.21",
     "java": ">=21",
-    "collective": ">=7.67"
+    "collective": ">=7.78"
   },
 
   "custom": {
@@ -47,11 +47,10 @@
 	  " Alister",
 	  " Andrean Olgo",
 	  " aternosorg",
-	  " BirdieMiner",
 	  " Cherriesaurus",
 	  " Michael W. S.",
+	  " Nahuel Fernandez",
 	  " Shana Gitnick",
-	  " Sukhmai",
 	  " Tyler Behl"
   ]
 }
