@@ -3,12 +3,10 @@ package com.natamus.villagernames.neoforge.events;
 import com.natamus.villagernames.cmds.CommandVillagernames;
 import com.natamus.villagernames.events.VillagerEvent;
 import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.RegisterCommandsEvent;
 import net.neoforged.neoforge.event.entity.EntityJoinLevelEvent;
 import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
 
-@EventBusSubscriber
 public class NeoForgeVillagerEvent {
 	@SubscribeEvent
 	public static void onSpawn(EntityJoinLevelEvent e) {
