@@ -77,7 +77,7 @@ public class VillagerEvent {
 		Villager villager = (Villager)entity;
 		VillagerData d = villager.getVillagerData();
 
-		String rawProfession = d.profession().value().toString();
+		String rawProfession = d.profession().getRegisteredName();
 		if (rawProfession.equals("none") || rawProfession.equals("nitwit")) {
 			return InteractionResult.PASS;
 		}
