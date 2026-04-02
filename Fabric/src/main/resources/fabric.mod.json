@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "villagernames",
+  "version": "8.3",
+
+  "name": "Villager Names",
+  "description": "Gives all villagers and villager-like entities their own name.",
+  "authors": [ "Rick South" ],
+  "contact": {
+    "homepage": "https://serilum.com/mod/villager-names",
+    "sources": "https://github.com/Serilum/Villager-Names",
+    "issues": "https://github.com/Serilum/.issue-tracker/labels/Mod:%20Villager%20Names"
+  },
+
+  "license": "All Right Reserved",
+  "icon": "icon.png",
+
+  "environment": "*",
+  "entrypoints": { "main": [ "com.natamus.villagernames.ModFabric" ], "modmenu": [ "com.natamus.villagernames.fabric.config.IntegrateModMenu" ] },
+  "mixins": [
+    "villagernames.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "fabric-api": "*",
+    "minecraft": ">=26.1",
+    "java": ">=25",
+    "collective": ">=8.16"
+  },
+
+  "custom": {
+    "modmenu": {
+      "links": {
+        "Donate <3" : "https://serilum.com/donate"
+      }
+    }
+  },
+
+  "contributors": [
+	  " ",
+	  "Thank you very much to my Membership sponsors for supporting the development of this mod!",
+	  " ",
+	  "If you would like to contribute too, check out https://serilum.com/donate.",
+	  " ",
+	  "Membership sponsors:",
+	  " akanealw",
+	  " Alister",
+	  " Andrean Olgo",
+	  " aternosorg",
+	  " Cherriesaurus",
+	  " MWS",
+	  " t128",
+	  " Tyler Behl",
+	  " XAgent",
+	  " ตัวตรึง พระนคร"
+  ]
+}
