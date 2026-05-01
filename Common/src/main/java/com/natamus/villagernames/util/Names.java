@@ -24,24 +24,26 @@ public class Names {
 		String dirpath = DataFunctions.getConfigDirectory() + File.separator + "villagernames";
 		File dir = new File(dirpath);
 		File file = new File(dirpath + File.separator + "customnames.txt");
-		
+
 		if (dir.isDirectory() && file.isFile()) {
 			Path customNamePath = Paths.get(dirpath + File.separator + "customnames.txt");
-			String cn = Files.readString(customNamePath);
+			String cn = Files.readString(customNamePath).strip();
+
+			if (cn.isEmpty()) {
+				return;
+			}
 
 			if (StringFunctions.sequenceCount(cn, ",") == 2 && cn.contains("Rick") && cn.contains("Bob") && cn.contains("Eve")) { // old config
 				FileChannel.open(customNamePath, StandardOpenOption.WRITE).truncate(0).close();
+				return;
 			}
-			else {
-				cn = cn.replace("\n", "").replace("\r", "").strip();
 
-				String[] cns = cn.split("[,\\n]");
-				for (String n : cns) {
-					String name = n.strip();
+			String[] cns = cn.split("[,\\r?\\n]+");
+			for (String n : cns) {
+				String name = n.strip();
 
-					if (!name.isEmpty()) {
-						customVillagerNames.add(name);
-					}
+				if (!name.isEmpty()) {
+					customVillagerNames.add(name);
 				}
 			}
 		}
