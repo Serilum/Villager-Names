@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "villagernames",
-  "version": "8.3",
+  "version": "8.4",
 
   "name": "Villager Names",
   "description": "Gives all villagers and villager-like entities their own name.",
@@ -26,7 +26,7 @@
     "fabric-api": "*",
     "minecraft": ">=26.1",
     "java": ">=25",
-    "collective": ">=8.17"
+    "collective": ">=8.22"
   },
 
   "custom": {
@@ -45,14 +45,11 @@
 	  " ",
 	  "Membership sponsors:",
 	  " akanealw",
-	  " Alister",
 	  " Andrean Olgo",
 	  " aternosorg",
 	  " Cherriesaurus",
 	  " MWS",
-	  " t128",
 	  " Tyler Behl",
-	  " XAgent",
-	  " ตัวตรึง พระนคร"
+	  " XAgent"
   ]
 }

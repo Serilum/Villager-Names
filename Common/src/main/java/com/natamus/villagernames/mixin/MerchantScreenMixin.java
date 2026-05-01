@@ -18,12 +18,12 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(value = MerchantScreen.class, priority = 1001)
 public abstract class MerchantScreenMixin extends AbstractContainerScreen<MerchantMenu> {
-	public MerchantScreenMixin(MerchantMenu p_97741_, Inventory p_97742_, Component p_97743_) {
-		super(p_97741_, p_97742_, p_97743_);
+	public MerchantScreenMixin(MerchantMenu merchantMenu, Inventory inventory, Component component) {
+		super(merchantMenu, inventory, component);
 	}
 
-	@Inject(method = "renderLabels(Lnet/minecraft/client/gui/GuiGraphics;II)V", at = @At(value = "HEAD"))
-	protected void renderLabels(GuiGraphicsExtractor guiGraphics, int i, int j, CallbackInfo ci) {
+	@Inject(method = "extractLabels(Lnet/minecraft/client/gui/GuiGraphicsExtractor;II)V", at = @At(value = "HEAD"))
+	protected void extractLabels(GuiGraphicsExtractor graphics, int xm, int ym, CallbackInfo ci) {
 		if (!ConfigHandler.showProfessionOnTradeScreen) {
 			return;
 		}
@@ -36,14 +36,14 @@ public abstract class MerchantScreenMixin extends AbstractContainerScreen<Mercha
 		ScreenFunctions.setMerchantScreenTitle((MerchantScreen)(Object)this, newTitle);
 	}
 
-	@ModifyVariable(method = "renderLabels(Lnet/minecraft/client/gui/GuiGraphics;II)V", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/Font;width(Lnet/minecraft/network/chat/FormattedText;)I", ordinal = 0))
-	public Component renderLabels_component(Component component) {
+	@ModifyVariable(method = "extractLabels(Lnet/minecraft/client/gui/GuiGraphicsExtractor;II)V", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/Font;width(Lnet/minecraft/network/chat/FormattedText;)I", ordinal = 0))
+	public Component extractLabels_component(Component titleAndLevel) {
 		if (ConfigHandler.hideMerchantLevelTradeScreen) {
 			MutableComponent newTitle = Util.getTradeScreenTitle();
 			if (newTitle != null) {
 				return newTitle;
 			}
 		}
-		return component;
+		return titleAndLevel;
 	}
 }

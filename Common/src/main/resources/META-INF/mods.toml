@@ -6,7 +6,7 @@ logoFile="icon.png"
 
 [[mods]]
 modId="villagernames"
-version="8.3"
+version="8.4"
 displayName="Villager Names"
 displayURL="https://serilum.com/mod/villager-names"
 authors="Rick South"
@@ -14,7 +14,7 @@ description='''Gives all villagers and villager-like entities their own name.
 '''
 credits='''Thank you very much to my Membership sponsors for supporting the development of this mod:  
 
-akanealw, Alister, Andrean Olgo, aternosorg, Cherriesaurus, MWS, t128, Tyler Behl, XAgent, ตัวตรึง พระนคร   
+akanealw, Andrean Olgo, aternosorg, Cherriesaurus, MWS, Tyler Behl, XAgent   
 
 If you would like to contribute too, check out https://serilum.com/donate. Appreciate it! <3   
 '''
@@ -22,7 +22,7 @@ If you would like to contribute too, check out https://serilum.com/donate. Appre
 [[dependencies.villagernames]]
     modId="collective"
     mandatory=true
-    versionRange="[8.17,)"
+    versionRange="[8.22,)"
     ordering="NONE"
     side="BOTH"
 
