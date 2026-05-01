@@ -2,6 +2,7 @@ package com.natamus.villagernames.events;
 
 import com.mojang.datafixers.util.Pair;
 import com.natamus.collective.functions.EntityFunctions;
+import com.natamus.collective.functions.StringFunctions;
 import com.natamus.villagernames.config.ConfigHandler;
 import com.natamus.villagernames.data.Variables;
 import com.natamus.villagernames.util.Names;
@@ -13,6 +14,7 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.npc.villager.Villager;
 import net.minecraft.world.entity.npc.villager.VillagerData;
+import net.minecraft.world.entity.npc.wanderingtrader.WanderingTrader;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.EntityHitResult;
@@ -47,18 +49,18 @@ public class VillagerEvent {
 		}
 		
 		String name = Names.getRandomName();
-		if (!name.equals("")) {
+		if (!name.isEmpty()) {
 			EntityFunctions.nameEntity(entity, name);
-			entity.getTags().add(Reference.MOD_ID + ".named");
+			
+			try {
+				entity.getTags().add(Reference.MOD_ID + ".named");
+			}
+			catch (UnsupportedOperationException ignored) { } // Extra try/catch for Origins
 		}
 	}
 
 	public static InteractionResult onVillagerInteract(Player player, Level level, InteractionHand hand, Entity entity, EntityHitResult hitResult) {
 		if (!level.isClientSide()) { // Client side only!
-			return InteractionResult.PASS;
-		}
-
-		if (!entity.getClass().equals(Villager.class)) {
 			return InteractionResult.PASS;
 		}
 
@@ -71,6 +73,17 @@ public class VillagerEvent {
 		}
 
 		if (!hand.equals(InteractionHand.MAIN_HAND)) {
+			return InteractionResult.PASS;
+		}
+
+		if (entity instanceof WanderingTrader) {
+			Component profession = Component.translatable("entity.minecraft.wandering_trader");
+			Variables.tradedVillagerPair = new Pair<>(entity.getName(), profession);
+			return InteractionResult.PASS;
+		}
+
+		if (!entity.getClass().equals(Villager.class)) {
+			Variables.tradedVillagerPair = new Pair<>(Component.empty(), Component.empty());
 			return InteractionResult.PASS;
 		}
 
@@ -93,10 +106,11 @@ public class VillagerEvent {
 		Component profession = Component.translatable(translatableInput);
 
 		if (translatableInput.equals(profession.getString())) {
-			profession = Component.literal(rawProfession.substring(0, 1).toUpperCase() + rawProfession.substring(1));
+			rawProfession = rawProfession.replace("_", " ");
+			profession = Component.literal(StringFunctions.capitalizeEveryWord(rawProfession));
 		}
 
-		Variables.tradedVillagerPair = new Pair<Component, Component>(villager.getName(), profession);
+		Variables.tradedVillagerPair = new Pair<>(villager.getName(), profession);
 		return InteractionResult.PASS;
 	}
 }

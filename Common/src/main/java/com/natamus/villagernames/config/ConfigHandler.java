@@ -22,7 +22,7 @@ public class ConfigHandler extends DuskConfig {
 
 	public static void initConfig() {
 		configMetaData.put("useCustomNames", Arrays.asList(
-			"Use the custom name list, editable in ./mods/villagernames/customnames.txt, seperated by a comma. If custom names are found, the default name list is ignored."
+			"Use the custom name list, editable in ./config/villagernames/customnames.txt, seperated by a comma. If custom names are found, the default name list is ignored."
 		));
 		configMetaData.put("useDefaultFemaleNames", Arrays.asList(
 			"Use the list of pre-defined female names when naming villagers."
