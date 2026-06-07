@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "villagernames",
-  "version": "8.4",
+  "version": "8.5",
 
   "name": "Villager Names",
   "description": "Gives all villagers and villager-like entities their own name.",
@@ -26,7 +26,7 @@
     "fabric": "*",
     "minecraft": ">=1.20",
     "java": ">=17",
-    "collective": ">=8.22"
+    "collective": ">=8.25"
   },
 
   "custom": {
@@ -44,12 +44,12 @@
 	  "If you would like to contribute too, check out https://serilum.com/donate.",
 	  " ",
 	  "Membership sponsors:",
-	  " akanealw",
 	  " Andrean Olgo",
 	  " aternosorg",
 	  " Cherriesaurus",
+	  " Linda Jansen",
+	  " Michelle Smith",
 	  " MWS",
-	  " Tyler Behl",
-	  " XAgent"
+	  " Tyler Behl"
   ]
 }
