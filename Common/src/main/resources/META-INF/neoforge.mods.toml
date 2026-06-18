@@ -14,7 +14,7 @@ description='''Gives all villagers and villager-like entities their own name.
 '''
 credits='''Thank you very much to my Membership sponsors for supporting the development of this mod:  
 
-Andrean Olgo, aternosorg, Cherriesaurus, Linda Jansen, Michelle Smith, MWS, Tyler Behl   
+Andrean Olgo, aternosorg, Cherriesaurus, Josh, Linda Jansen, Michelle Smith, MWS, Tyler Behl   
 
 If you would like to contribute too, check out https://serilum.com/donate. Appreciate it! <3   
 '''
@@ -22,14 +22,14 @@ If you would like to contribute too, check out https://serilum.com/donate. Appre
 [[dependencies.villagernames]]
     modId="collective"
     type="required"
-    versionRange="[8.25,)"
+    versionRange="[8.29,)"
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.villagernames]]
     modId="minecraft"
     type="required"
-    versionRange="[26.1.2]"
+    versionRange="[26.2]"
     ordering="NONE"
     side="BOTH"
 
