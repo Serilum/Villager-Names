@@ -14,7 +14,7 @@ public class NeoForgeVillagerEvent {
 	}
 
 	@SubscribeEvent
-	public static void onPlayerInteract(PlayerInteractEvent.EntityInteractSpecific e) {
+	public static void onPlayerInteract(PlayerInteractEvent.EntityInteract e) {
 		VillagerEvent.onVillagerInteract(e.getEntity(), e.getLevel(), e.getHand(), e.getTarget(), null);
 	}
 
