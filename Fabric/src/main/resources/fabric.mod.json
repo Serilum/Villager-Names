@@ -12,7 +12,7 @@
     "issues": "https://github.com/Serilum/.issue-tracker/labels/Mod:%20Villager%20Names"
   },
 
-  "license": "All Right Reserved",
+  "license": "All Rights Reserved",
   "icon": "icon.png",
 
   "environment": "*",
@@ -24,7 +24,7 @@
   "depends": {
     "fabricloader": ">=0.18.0",
     "fabric-api": "*",
-    "minecraft": ">=26.2",
+    "minecraft": ">=26.3",
     "java": ">=25",
     "collective": ">=8.39"
   },
@@ -48,7 +48,6 @@
 	  " AnyankaT",
 	  " aternosorg",
 	  " Cherriesaurus",
-	  " Josh",
 	  " Linda Jansen",
 	  " MWS",
 	  " Tyler Behl"
