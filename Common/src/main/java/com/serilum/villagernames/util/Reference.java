@@ -1,0 +1,8 @@
+package com.serilum.villagernames.util;
+
+public class Reference {
+	public static final String MOD_ID = "villagernames";
+	public static final String NAME = "Villager Names";
+	public static final String VERSION = "8.7";
+	public static final String ACCEPTED_VERSIONS = "[26.2.0]";
+}

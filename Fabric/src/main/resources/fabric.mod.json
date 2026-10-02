@@ -1,22 +1,22 @@
 {
   "schemaVersion": 1,
   "id": "villagernames",
-  "version": "8.6",
+  "version": "8.7",
 
   "name": "Villager Names",
   "description": "Gives all villagers and villager-like entities their own name.",
-  "authors": [ "Rick South" ],
+  "authors": [ "Serilum" ],
   "contact": {
     "homepage": "https://serilum.com/mod/villager-names",
     "sources": "https://github.com/Serilum/Villager-Names",
     "issues": "https://github.com/Serilum/.issue-tracker/labels/Mod:%20Villager%20Names"
   },
 
-  "license": "All Right Reserved",
+  "license": "All Rights Reserved",
   "icon": "icon.png",
 
   "environment": "*",
-  "entrypoints": { "main": [ "com.natamus.villagernames.ModFabric" ], "modmenu": [ "com.natamus.villagernames.fabric.config.IntegrateModMenu" ] },
+  "entrypoints": { "main": [ "com.serilum.villagernames.ModFabric" ], "modmenu": [ "com.serilum.villagernames.fabric.config.IntegrateModMenu" ] },
   "mixins": [
     "villagernames.mixins.json"
   ],
@@ -26,7 +26,7 @@
     "fabric-api": "*",
     "minecraft": ">=26.2",
     "java": ">=25",
-    "collective": ">=8.39"
+    "collective": ">=8.40"
   },
 
   "custom": {
@@ -41,14 +41,13 @@
 	  " ",
 	  "Thank you very much to my Membership sponsors for supporting the development of this mod!",
 	  " ",
-	  "If you would like to contribute too, check out https://serilum.com/donate.",
+	  "If you would like to contribute too, check out https://serilum.com/donate",
 	  " ",
 	  "Membership sponsors:",
 	  " Andrean Olgo",
 	  " AnyankaT",
 	  " aternosorg",
 	  " Cherriesaurus",
-	  " Josh",
 	  " Linda Jansen",
 	  " MWS",
 	  " Tyler Behl"
