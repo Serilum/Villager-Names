@@ -1,7 +1,7 @@
-package com.natamus.villagernames.config;
+package com.serilum.villagernames.config;
 
 import com.natamus.collective.config.DuskConfig;
-import com.natamus.villagernames.util.Reference;
+import com.serilum.villagernames.util.Reference;
 
 import java.util.Arrays;
 import java.util.HashMap;

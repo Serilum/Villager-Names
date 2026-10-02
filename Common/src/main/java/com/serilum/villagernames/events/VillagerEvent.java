@@ -1,13 +1,13 @@
-package com.natamus.villagernames.events;
+package com.serilum.villagernames.events;
 
 import com.mojang.datafixers.util.Pair;
 import com.natamus.collective.functions.EntityFunctions;
 import com.natamus.collective.functions.StringFunctions;
-import com.natamus.villagernames.config.ConfigHandler;
-import com.natamus.villagernames.data.Variables;
-import com.natamus.villagernames.util.Names;
-import com.natamus.villagernames.util.Reference;
-import com.natamus.villagernames.util.Util;
+import com.serilum.villagernames.config.ConfigHandler;
+import com.serilum.villagernames.data.Variables;
+import com.serilum.villagernames.util.Names;
+import com.serilum.villagernames.util.Reference;
+import com.serilum.villagernames.util.Util;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;

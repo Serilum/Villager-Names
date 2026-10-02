@@ -1,9 +1,9 @@
-package com.natamus.villagernames.cmds;
-import com.natamus.villagernames.util.Reference;
+package com.serilum.villagernames.cmds;
+import com.serilum.villagernames.util.Reference;
 
 import com.mojang.brigadier.CommandDispatcher;
 import com.natamus.collective.functions.MessageFunctions;
-import com.natamus.villagernames.util.Util;
+import com.serilum.villagernames.util.Util;
 import net.minecraft.ChatFormatting;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;

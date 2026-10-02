@@ -1,8 +1,8 @@
-package com.natamus.villagernames.util;
+package com.serilum.villagernames.util;
 
 import com.natamus.collective.functions.EntityFunctions;
-import com.natamus.villagernames.config.ConfigHandler;
-import com.natamus.villagernames.data.Variables;
+import com.serilum.villagernames.config.ConfigHandler;
+import com.serilum.villagernames.data.Variables;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.server.level.ServerLevel;

@@ -1,10 +1,10 @@
-package com.natamus.villagernames;
+package com.serilum.villagernames;
 
 import com.natamus.collective.config.GenerateJSONFiles;
-import com.natamus.villagernames.config.ConfigHandler;
-import com.natamus.villagernames.data.Variables;
-import com.natamus.villagernames.util.Names;
-import com.natamus.villagernames.util.Reference;
+import com.serilum.villagernames.config.ConfigHandler;
+import com.serilum.villagernames.data.Variables;
+import com.serilum.villagernames.util.Names;
+import com.serilum.villagernames.util.Reference;
 
 import java.io.IOException;
 

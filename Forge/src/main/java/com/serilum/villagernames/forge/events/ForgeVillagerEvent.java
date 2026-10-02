@@ -1,7 +1,7 @@
-package com.natamus.villagernames.forge.events;
+package com.serilum.villagernames.forge.events;
 
-import com.natamus.villagernames.cmds.CommandVillagernames;
-import com.natamus.villagernames.events.VillagerEvent;
+import com.serilum.villagernames.cmds.CommandVillagernames;
+import com.serilum.villagernames.events.VillagerEvent;
 import net.minecraftforge.event.RegisterCommandsEvent;
 import net.minecraftforge.event.entity.EntityJoinLevelEvent;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
@@ -18,8 +18,8 @@ public class ForgeVillagerEvent {
 		VillagerEvent.onVillagerInteract(e.getEntity(), e.getLevel(), e.getHand(), e.getTarget(), null);
 	}
 
-    @SubscribeEvent
-    public static void registerCommands(RegisterCommandsEvent e) {
-    	CommandVillagernames.register(e.getDispatcher());
-    }
+	@SubscribeEvent
+	public static void registerCommands(RegisterCommandsEvent e) {
+		CommandVillagernames.register(e.getDispatcher());
+	}
 }

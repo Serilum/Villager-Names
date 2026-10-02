@@ -1,8 +1,8 @@
-package com.natamus.villagernames.mixin;
+package com.serilum.villagernames.mixin;
 
 import com.natamus.collective.functions.ScreenFunctions;
-import com.natamus.villagernames.config.ConfigHandler;
-import com.natamus.villagernames.util.Util;
+import com.serilum.villagernames.config.ConfigHandler;
+import com.serilum.villagernames.util.Util;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.screens.inventory.MerchantScreen;

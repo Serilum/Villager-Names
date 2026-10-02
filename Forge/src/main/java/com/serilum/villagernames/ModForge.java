@@ -1,10 +1,10 @@
-package com.natamus.villagernames;
+package com.serilum.villagernames;
 
 import com.natamus.collective.check.RegisterMod;
 import com.natamus.collective.check.ShouldLoadCheck;
-import com.natamus.villagernames.forge.config.IntegrateForgeConfig;
-import com.natamus.villagernames.forge.events.ForgeVillagerEvent;
-import com.natamus.villagernames.util.Reference;
+import com.serilum.villagernames.forge.config.IntegrateForgeConfig;
+import com.serilum.villagernames.forge.events.ForgeVillagerEvent;
+import com.serilum.villagernames.util.Reference;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.ModLoadingContext;

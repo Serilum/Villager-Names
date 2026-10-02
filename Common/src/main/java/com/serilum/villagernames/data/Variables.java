@@ -1,4 +1,4 @@
-package com.natamus.villagernames.data;
+package com.serilum.villagernames.data;
 
 import com.mojang.datafixers.util.Pair;
 import com.mojang.logging.LogUtils;

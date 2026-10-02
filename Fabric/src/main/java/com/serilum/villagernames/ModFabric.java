@@ -1,10 +1,10 @@
-package com.natamus.villagernames;
+package com.serilum.villagernames;
 
 import com.natamus.collective.check.RegisterMod;
 import com.natamus.collective.check.ShouldLoadCheck;
-import com.natamus.villagernames.cmds.CommandVillagernames;
-import com.natamus.villagernames.events.VillagerEvent;
-import com.natamus.villagernames.util.Reference;
+import com.serilum.villagernames.cmds.CommandVillagernames;
+import com.serilum.villagernames.events.VillagerEvent;
+import com.serilum.villagernames.util.Reference;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerEntityEvents;

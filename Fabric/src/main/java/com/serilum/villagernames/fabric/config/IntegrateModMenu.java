@@ -1,7 +1,7 @@
-package com.natamus.villagernames.fabric.config;
+package com.serilum.villagernames.fabric.config;
 
 import com.natamus.collective.config.DuskConfig;
-import com.natamus.villagernames.util.Reference;
+import com.serilum.villagernames.util.Reference;
 import com.terraformersmc.modmenu.api.ConfigScreenFactory;
 import com.terraformersmc.modmenu.api.ModMenuApi;
 

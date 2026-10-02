@@ -1,7 +1,7 @@
-package com.natamus.villagernames.forge.config;
+package com.serilum.villagernames.forge.config;
 
 import com.natamus.collective.config.DuskConfig;
-import com.natamus.villagernames.util.Reference;
+import com.serilum.villagernames.util.Reference;
 import net.minecraftforge.client.ConfigScreenHandler;
 import net.minecraftforge.fml.ModLoadingContext;
 

@@ -1,9 +1,9 @@
-package com.natamus.villagernames.util;
+package com.serilum.villagernames.util;
 
 import com.natamus.collective.data.GlobalVariables;
 import com.natamus.collective.functions.DataFunctions;
 import com.natamus.collective.functions.StringFunctions;
-import com.natamus.villagernames.config.ConfigHandler;
+import com.serilum.villagernames.config.ConfigHandler;
 
 import java.io.File;
 import java.io.IOException;
