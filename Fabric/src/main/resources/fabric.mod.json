@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "villagernames",
-  "version": "8.7",
+  "version": "8.8",
 
   "name": "Villager Names",
   "description": "Gives all villagers and villager-like entities their own name.",
@@ -26,13 +26,13 @@
     "fabric": "*",
     "minecraft": ">=1.20",
     "java": ">=17",
-    "collective": ">=8.40"
+    "collective": ">=8.57"
   },
 
   "custom": {
     "modmenu": {
       "links": {
-        "Donate <3" : "https://serilum.com/donate"
+        "❤ Patreon" : "https://link.serilum.com/patreon"
       }
     }
   },
@@ -44,7 +44,6 @@
 	  "If you would like to contribute too, check out https://serilum.com/donate",
 	  " ",
 	  "Membership sponsors:",
-	  " Andrean Olgo",
 	  " AnyankaT",
 	  " aternosorg",
 	  " Cherriesaurus",
