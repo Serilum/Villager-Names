@@ -6,7 +6,7 @@ logoFile="icon.png"
 
 [[mods]]
 modId="villagernames"
-version="8.8"
+version="8.9"
 displayName="Villager Names"
 displayURL="https://serilum.com/mod/villager-names"
 authors="Serilum"
@@ -22,7 +22,7 @@ If you would like to contribute too, check out https://serilum.com/donate Apprec
 [[dependencies.villagernames]]
     modId="collective"
     type="required"
-    versionRange="[8.57,)"
+    versionRange="[8.60,)"
     ordering="NONE"
     side="BOTH"
 
