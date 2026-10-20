@@ -3,7 +3,6 @@ package com.serilum.villagernames.events;
 import com.mojang.datafixers.util.Pair;
 import com.natamus.collective.functions.EntityFunctions;
 import com.natamus.collective.functions.StringFunctions;
-import com.serilum.villagernames.config.ConfigHandler;
 import com.serilum.villagernames.data.Variables;
 import com.serilum.villagernames.util.Names;
 import com.serilum.villagernames.util.Reference;
@@ -29,17 +28,8 @@ public class VillagerEvent {
 			return;
 		}
 
-		if (!(entity instanceof Villager)) {
-			boolean goname = false;
-			if (ConfigHandler.nameModdedVillagers) {
-				if (EntityFunctions.isModdedVillager(entity)) {
-					goname = true;
-				}
-			}
-			
-			if (!goname) {
-				return;
-			}
+		if (!Util.shouldBeNamed(entity)) {
+			return;
 		}
 
 		if (entity.hasCustomName()) {
