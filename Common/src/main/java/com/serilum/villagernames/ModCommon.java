@@ -1,5 +1,6 @@
 package com.serilum.villagernames;
 
+import com.natamus.collective.config.DuskConfigCustomFile;
 import com.natamus.collective.config.GenerateJSONFiles;
 import com.serilum.villagernames.config.ConfigHandler;
 import com.serilum.villagernames.data.Variables;
@@ -24,5 +25,7 @@ public class ModCommon {
 		} catch (IOException e) {
 			Variables.logger.warn("[" + Reference.NAME + "] Unable to load custom name list config. Custom names disabled.");
 		}
+
+		DuskConfigCustomFile.addText(Reference.MOD_ID, "customnames.txt", "Custom Names", "Your own villager names, one per line. Used when 'useCustomNames' is enabled.", Names::getCustomNamesText, Names::setCustomNamesText);
 	}
 }

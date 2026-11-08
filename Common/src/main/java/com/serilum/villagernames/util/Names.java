@@ -21,6 +21,8 @@ public class Names {
 	public static List<String> customVillagerNames = new ArrayList<String>();
 	
 	public static void setCustomNames() throws IOException {
+		customVillagerNames = new ArrayList<>();
+
 		String dirpath = DataFunctions.getConfigDirectory() + File.separator + "villagernames";
 		File dir = new File(dirpath);
 		File file = new File(dirpath + File.separator + "customnames.txt");
@@ -53,6 +55,43 @@ public class Names {
 			PrintWriter writer = new PrintWriter(dirpath + File.separator + "customnames.txt", StandardCharsets.UTF_8);
 			writer.close();
 		}
+	}
+
+	public static String getCustomNamesText() {
+		String customNamesText;
+		try {
+			customNamesText = Files.readString(getCustomNamesPath()).strip();
+		}
+		catch (IOException ignored) {
+			return "";
+		}
+
+		List<String> names = new ArrayList<>();
+		for (String name : customNamesText.split("[,\\r?\\n]+")) {
+			if (!name.isBlank()) {
+				names.add(name.strip());
+			}
+		}
+		return String.join("\n", names);
+	}
+
+	public static void setCustomNamesText(String customNamesText) {
+		try {
+			PrintWriter writer = new PrintWriter(getCustomNamesPath().toFile(), StandardCharsets.UTF_8);
+			for (String name : customNamesText.split("\\R")) {
+				if (!name.isBlank()) {
+					writer.println(name.strip());
+				}
+			}
+			writer.close();
+
+			setCustomNames();
+		}
+		catch (IOException ignored) { }
+	}
+
+	private static Path getCustomNamesPath() {
+		return Paths.get(DataFunctions.getConfigDirectory() + File.separator + "villagernames" + File.separator + "customnames.txt");
 	}
 
 	public static String getRandomName() {
